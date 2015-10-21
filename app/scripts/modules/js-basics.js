@@ -28,8 +28,8 @@
       var st=0;
       var tab;
       var j;
-      var regex = new RegExp(/([^A-Za-z0-9\-])/);
-
+      //var regex = new RegExp(/([^A-Za-z0-9\-])/);
+ var regex = new RegExp(/([^a-zA-Z0-9_/0080/-/FFFF/])/);
       for(var i= 0; i < arr.length; i++)
       {
         if (!regex.test(arr[i])) {
